@@ -10,7 +10,9 @@ end
 group :development, :test do
   gem "sqlite3"
 end
-
+ 
+	#bootstrap
+	gem 'bootstrap-sass', '~> 2.3.2.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
