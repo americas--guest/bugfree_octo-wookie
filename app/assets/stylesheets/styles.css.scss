@@ -4,7 +4,9 @@ $baseFontFamily: oxygen;
 
 $btnPrimaryBackground: red;
 $navbarBackgroundHighlight: white;
-$navbarBackgroundHighlight: blue;
+$navbarBackgroundHighlight: crimson;
+
+
 @import 'bootstrap';
 
 body {
@@ -15,13 +17,13 @@ body {
 
 .navbar-inner {
 	@include box-shadow(none !important);
-	border: 0;
+	border: 1;
 }
 
 .footer {
 	margin-top: 50px;
-	color: $grayLight;
+	color: $black;
 	a {
-		color: $gray;
+		color: $blue;
 	}
 }
