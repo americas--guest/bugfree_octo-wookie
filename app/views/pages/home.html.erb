@@ -1,14 +1,17 @@
-<div class="hero-unit">
-	<h1>Welcome to Fanwave</h1>
-	<p>
-		master chief
-		<%= link_to "Sul's Twitter", "https://twitter.com/Americas__guest"%>
-		
-	</a>application.
-	Twitter Account
-	</p>
-		<%= link_to "Sign up Now!", "#", class: "btn-primary btn-large" %>
-	</p>
-	<%= link_to 'about', about_path %>
-</div>
-
+<% if user_signed_in? %>
+	<h1>Lead us Penny! </h1>
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome to Fanwave</h1>
+		<p>
+			master chief
+			<%= link_to "Sul's Twitter", "https://twitter.com/Americas__guest"%>
+			
+		</a>application.
+		Twitter Account
+		</p>
+			<%= link_to "Sign up Now!", new_user_registration_path, class: "btn-primary btn-large" %>
+		</p>
+		<%= link_to 'about', about_path %>
+	</div>
+<% end %>
