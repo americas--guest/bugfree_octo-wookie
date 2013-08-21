@@ -5,8 +5,9 @@ before_action :set_pin_user, only: [:edit, :update, :destroy]
 
 
 def index
-@pin = Pin.all 
+    @pins = Pin.order("created_at desc")
 end
+
 
 # GET /pins/1
 # GET /pins/1.json
