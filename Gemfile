@@ -8,6 +8,7 @@ gem 'simple_form'
 gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
 gem 'protected_attributes'
 gem 'masonry-rails', github: 'kristianmandrup/masonry-rails'
+gem 'aws-sdk'
 
 
 # Use sqlite3 as the database for Active Record
